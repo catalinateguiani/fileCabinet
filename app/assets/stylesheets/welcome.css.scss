@@ -2,20 +2,27 @@
 // STYLING FOR WELCOME PAGE
 
 #banner {
-	background-image: url(image_path("welcome_banner_image.jpg"));
+	background-image: url(image_path("callout_backgroung.jpg"));
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
 	width: 100%;
 	min-height: 500px;
-	display: table;
+  display: table;
+  text-align: center;
+  padding: 7.5rem 0;
+  border: 0.3rem solid white;
+  
+  // border-radius: 30%;
+  box-shadow: 1px 12px 11px rgba(0,0,0,.5);
+  color: white;
 	.banner_content {
 		display: table-cell;
 		vertical-align: middle;
-		text-align: center;
+    text-align: center;
 		h1 {
-			@include bold_font;
-			color: #529ECC;
+      @include bold_font;
+			// color: #529ECC;
 			font-size: 3.5rem;
 			margin: 0;
 		}
@@ -44,16 +51,21 @@
 }
 
 #callouts {
-	background-image: image-url("callout_background.jpg");
+  // background-image: url(image_path("callout_backgroung.jpg"));
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
 	width: 100%;
 	min-height: 400px;
-	display: table;
+  display: table;
+  border: 0.3rem solid white;
 	.callout_inner {
 		display: table-cell;
-		vertical-align: middle;
+    vertical-align: middle;
+    text-shadow: 1px 1px #529ecc;
+		color: white;
+		padding-bottom: 2rem;
+    
 	}
 	.callout {
 		text-align: center;
@@ -74,9 +86,10 @@
 #bottom_cta {
 	text-align: center;
 	padding: 7.5rem 0;
+	border: 0.3rem solid white;
 	h2 {
 		@include bold_font;
-		color: $dark_gray;
+		color: $light_gray;
 		font-size: 3rem;
 		margin: 0;
 	}
@@ -86,4 +99,3 @@
 			color: #a7a8a8;
 		}
 }
-// © 2019 GitHub, Inc.

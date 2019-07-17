@@ -2,7 +2,8 @@
 
  #docs {
 	.doc {
-		background: #afb0b0;
+		// background: #afb0b0;
+		background: rgba(146,146,146,0.4);
 		width: 90%;
 		min-height: 100px;
 		margin: 1rem 1%;
@@ -32,10 +33,11 @@
 			position: absolute;
 			bottom: .25rem;
 			left: 27.5%;
-			color: $light_gray;
+			color: silver;
 			font-weight: bold;
 			font-size: .75rem;
 			text-align: left;
+			padding-top: 0.5rem;
 		}	
 	}
 }
